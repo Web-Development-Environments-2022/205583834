@@ -4,175 +4,191 @@
 <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
-<div id="menu">
-<li><a href="#about">About Me</a></li>
-<li><a href="#photos">My Photos</a></li>
-<li><a href="#playlist">My Playlist</a></li>
-<li><a href="#like">Like</a></li>
-<li><a href="#qrcoder">QR code</a></li>
-<li><a href="#spa">Q&A</a></li>
-<li><a href="#contact">Contact Me</a></li>
-</div>
-		  
-<section id="about" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-about me
-<br/>
-<br/>
-<br/>
+  <table cellpadding="0" cellspacing="0" id="navMenu">
+    <tr id="menu">
+        <td><img src="images/grif.jpg" style="height: 50px;    background-color: brown;"></td>
+        <td id="leftSide"></td>
+        <td class="menuGap"></td>
+        <td class="navButton"><a href="#about" class="navButtonLink">About Me</a></td>
+        <td class="menuGap"></td>
+        <td class="navButton"><a href="#photos" class="navButtonLink">My Photos</a></td>
+        <td class="menuGap"></td>
+        <td class="navButton"><a href="#playlist" class="navButtonLink">My Playlist</a></td>
+        <td class="menuGap"></td>
+        <td class="navButton"><a href="#like" class="navButtonLink">Like</a></td>
+        <td class="menuGap"></td>
+        <td class="navButton"><a href="#qrcoder" class="navButtonLink">QR Code</a></td>
+        <td class="menuGap"></td>
+        <td class="navButton"><a href="#spa" class="navButtonLink">Q&A</a></td>
+        <td class="menuGap"></td>
+        <td class="navButton"><a href="#contact" class="navButtonLink">Contact Me</a></td>
+        <td id="rightSide"></td>
+    </tr>        
+</table>
+
+<section id="about" class="flexBox section">
+  <table cellpadding="0" cellspacing="0">
+    <tr id="aboutMeTitlee">
+      <td colspan="2"><h1>About Me</h1></td>
+    </tr>
+    <tr id="aboutMe"> 
+        <td id="aboutMeTitle">
+            <ul id="aboutUl">
+                <li>Minerva worked for two years at the Ministry of Magic and later returned to Hogwarts, where she became Head of Gryffindor House and the Transfiguration professor</li>
+                <li>Minerva greatly helped the Ministry of Magic's resistance through spying on Death Eaters and bringing the Aurors crucial information on their activities. </li>
+                <li>Minerva became concurrently, at differing times, Deputy Headmistress and Headmistress of Hogwarts</li>
+                <li>Minerva survived the Second Wizarding War and became Headmistress full time, a title she still held into the early 2020s</li>
+              </ul>
+        </td>
+        <td id="aboutMeImg"><img src="images/profImage.jpg" id="profImage" height="201.33"> 
+        </td>
+    </tr>
+</table>
 </section>
 
 <section id="photos" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my photos
-<br/>
-<br/>
-<br/>
+  <table cellpadding="0" cellspacing="0">
+    <tr id="photosTitleTr" >
+        <td colspan="4">
+            <h1>My Photos</h1>
+        </td>
+    </tr>
+    <tr>
+        <td class="imageWrapper"><img src="images/image1.jpeg" class="galleryImage"></td>
+        <td class="imageWrapper"><img src="images/image2.jpg" class="galleryImage"></td>
+        <td class="imageWrapper"><img src="images/image3.jpg" class="galleryImage"></td>
+        <td class="imageWrapper"><img src="images/image4.jpeg" class="galleryImage"></td>
+    </tr>
+</table>
 </section>
 
-<section id="playlist" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my playlist
-<br/>
-<br/>
-<br/>
+
+<section id="playlist"  class="section">
+  <table id="playlisti">
+    <tr id="playlistTrTitle">
+        <td colspan="3">
+        <h1>My Playlist</h1>
+        </td>
+    </tr> 
+    <tr id="playlistTrIframeWrapper">   
+        <td id="leftSidePlaylist"></td>
+        <td id="playlistTdTitle">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/2Tpb1XyqGOQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br/>
+        </td>
+        <td id="rightSidePlaylist"></td>
+
+    </tr>
+</table>
 </section>
+
 
 <section id="like" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-give me a like
-<br/>
-<br/>
-<br/>
-</section>
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/he_IL/sdk.js#xfbml=1&version=v13.0" nonce="IjgC1Bx2"></script>
+  
+  <table>
+    <tr>
+        <td colspan="3"><h1>Give mcgonagall a Like</h1></td>
+    </tr>
 
+    <tr>
+        <td id="LikeButton" style="text-align:center;">
+          <div class="fb-like" data-href="https://www.facebook.com/MadamProfessorMcGonagall/" data-width="20px" data-layout="button_count" data-action="like" data-size="large" data-share="true" style="text-align: center;"></div>        </td>
+
+    </tr>
+</table>
+
+</section>
 <section id="qrcoder" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-scan my code
-<br/>
-<br/>
-<br/>
+<table>
+  <tr>
+    <td colspan="3"> <h1>scan my code</h1></td>
+  </tr>
+  <tr>
+    <td id="leftSideQrCoder"></td>
+    <td id="qrcodeImgWrapper"><img src="images/qrCode.png" width="50%" id="qrCodeImg"></td>
+    <td id="rightSideQrCoder"></td>
+
+  </tr>
+</table>
 </section>
 
 <section id="spa" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-ans
-<br/>
-<br/>
-<br/>
+<table>
+  <tr>
+    <td><h1>ans</h1>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p><span style="font-weight: bold;color:rgb(169, 207, 53)">Web 1.0:</span></p>
+      <ul class="ansUl">
+        <li>Mainly a content delivery network that show information to the users</li>
+        <li>The pages are static which means the users can only read from the website</li>
+      </ul>
+      <p><span style="font-weight: bold;color:rgb(169, 207, 53)">Web 2.0:</span></p>
+      <ul class="ansUl">
+        <li>Highlights user generated content (the users can take part and not just the website owner</li>
+        <li>The pages are not read only base and the user can interact with the website</li>
+        <li>Infrastrucure to known technologies such as P2P,social networks, etc.</li>
+      </ul>
+      <p><span style="font-weight: bold;color:rgb(169, 207, 53)">Web 3.0:</span></p>
+      <ul class="ansUl"> 
+        <li>Altering the web into database</li>
+        <li>The development includes also backend side and not just frontend like it used to be</li>
+        <li>include new features such as AI, stronger connectivity, 3D graphics, etc. </li>
+        <li>Give the opportunity to software agents to process the data and not just for human users</li>
+      </ul>
+      <p><span style="font-weight: bold;color:rgb(169, 207, 53)">Use Case Example:</span></p>
+      <p style="color:blanchedalmond">in search on the internet of some medicine:<br>
+      <span style="font-weight: bold">&nbsp&nbsp Web 1.0:</span> The websites will be give information about the specific medicine (static pages). The user can't respond to the content directly from the internet<br>
+      <span style="font-weight: bold">&nbsp&nbsp Web 2.0:</span> The website will show information about the medicine (like in web 1.0) but it will also contains comments of other users and the option for the user to comment by himself<br>
+      <span style="font-weight: bold">&nbsp&nbsp Web 3.0:</span> The websites will display the information and will recommend us on other alternatives (based on recommendation systems and other AI methods).<br>
+      
+
+
+    </td>
+  </tr>
+</table>
 </section>
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="app.js"></script>
+<script src="emojionearea.min.js"></script>
 <section id="contact" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-contact me
-<br/>
-<br/>
-<br/>
+<table>
+  <tr>
+    <td colspan="3"><h1>contact me</h1></td>
+  </tr>
+  <tr>
+    <td class="leftSideForm"></td>
+    <td id="form">
+      <form action="mailto:snirggaton@gmail.com" method="post" enctype="text/plain">  
+        <label>Email:</label><br>
+        <input type="email" id="formEmail"><br>
+        <br>
+        <label>Message</label><br>
+        <textarea input type="text" name="Message" id="formText"></textarea>
+        <script>
+          $(document).ready(function(){
+            $("#formText").emojioneArea({
+              pickerPosition:"bottom"
+            });
+          })
+        </script>
+        <br>
+        
+    </td>
+    <td class="rightSideForm"></td>
+  </tr>
+  <tr>
+    <td class="leftSideForm"></td> 
+    <td style="text-align: center;"><button type="submit">Send</button></td>
+    <td class="rightSideForm"></td>
+  </tr>
+</form>
+
+</table>
 </section>
 
 
